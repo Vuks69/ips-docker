@@ -8,6 +8,8 @@ services:
   server:
     build: ./ips-server
     image: ips-server:latest
+    cap_add:
+      - NET_ADMIN
     volumes:
       - ./results/server:/results:rw
     hostname: ips-server
