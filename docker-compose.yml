@@ -1,26 +1,38 @@
 version: '3.8'
 
 services:
-  client1:
-    build: ./ips-client1
-    image: ips-client1:latest
+  server:
+    build: ./ips-server
+    image: ips-server:latest
     volumes:
-      - ~/workspace/results/client1:/results:rw
+      - ./results/server:/results:rw
+    hostname: ips-server
     networks:
       - intnet
-    ports:
-      - 50001:50001
-    extra_hosts:
-      - "client2:10.0.1.2"
+    expose:
+      - "50001"
+    command: iperf3 --server --port 50001 --daemon --json --logfile /results/server/iperf3.log && wait 70 && exit
 
-  client2:
-    build: ./ips-client2
-    image: ips-client2:latest
+  client-tcp:
+    build: ./ips-client
+    image: ips-client:latest
+    depends_on:
+      - server
     volumes:
-      - ~/workspace/results/client2:/results:rw
+      - ./results/client:/results:rw
+    hostname: ips-client-tcp
     networks:
       - intnet
-    ports:
-      - 50002:50002
-    extra_hosts:
-      - "client1:10.0.1.1"
+    command: iperf3 --client ips-server --port 50001 --reverse --parallel 5 --time 60 --logfile /results/client/tcp-iperf3.log
+
+  client-udp:
+    build: ./ips-client
+    image: ips-client:latest
+    depends_on:
+      - server
+    volumes:
+      - ./results/client:/results:rw
+    hostname: ips-client-udp
+    networks:
+      - intnet
+    command: iperf3 --client ips-server --port 50001 --udp --reverse --parallel 5 --time 60 --logfile /results/client/udp-iperf3.log
