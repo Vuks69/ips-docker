@@ -1,5 +1,9 @@
 version: '3.8'
 
+networks:
+  intnet:
+    external: true
+
 services:
   server:
     build: ./ips-server
