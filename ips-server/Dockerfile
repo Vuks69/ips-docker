@@ -3,8 +3,10 @@
 FROM alpine:latest
 
 RUN <<EOF
-    apk update
-    apk add iperf3 iproute2-tc
+    apk update &&
+    apk add
+        iperf3
+        iproute2-tc
 EOF
 
 RUN <<EOF
