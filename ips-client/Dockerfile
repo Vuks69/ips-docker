@@ -2,10 +2,9 @@
 
 FROM alpine:latest
 
-RUN <<EOF
-apk update
-apk add iperf3
-EOF
+RUN apk update && \
+    apk add \
+        iperf3
 
 COPY client.sh /
 
