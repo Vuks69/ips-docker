@@ -11,7 +11,8 @@ services:
       - intnet
     expose:
       - "50001"
-    command: iperf3 --server --port 50001 --daemon --json --logfile /results/server/iperf3.log && wait 70 && exit
+      - "50002"
+    command: [ "50001", "50002" ]
 
   client-tcp:
     build: ./ips-client
@@ -23,7 +24,7 @@ services:
     hostname: ips-client-tcp
     networks:
       - intnet
-    command: iperf3 --client ips-server --port 50001 --reverse --parallel 5 --time 60 --logfile /results/client/tcp-iperf3.log
+    command: [ "50001" ]
 
   client-udp:
     build: ./ips-client
@@ -35,4 +36,4 @@ services:
     hostname: ips-client-udp
     networks:
       - intnet
-    command: iperf3 --client ips-server --port 50001 --udp --reverse --parallel 5 --time 60 --logfile /results/client/udp-iperf3.log
+    command: [ "50002", "--udp" ]
