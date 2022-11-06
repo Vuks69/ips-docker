@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  client1:
+    build: ./ips-client1
+    image: ips-client1:latest
+    volumes:
+      - ~/workspace/results/client1:/results:rw
+    networks:
+      - intnet
+    ports:
+      - 50001:50001
+    extra_hosts:
+      - "client2:10.0.1.2"
+
+  client2:
+    build: ./ips-client2
+    image: ips-client2:latest
+    volumes:
+      - ~/workspace/results/client2:/results:rw
+    networks:
+      - intnet
+    ports:
+      - 50002:50002
+    extra_hosts:
+      - "client1:10.0.1.1"
