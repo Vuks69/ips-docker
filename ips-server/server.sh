@@ -38,3 +38,5 @@ for PORT in ${PORTS}; do
         --json \
         --logfile "/results/server/iperf3-${PORT}.log"
 done
+
+wait 90
