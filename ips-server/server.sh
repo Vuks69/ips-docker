@@ -37,6 +37,7 @@ for PORT in ${PORTS}; do
         --daemon \
         --json \
         --logfile "/results/server/iperf3-${PORT}.log"
+    PIDS="$PIDS $!"
 done
 
-wait
+wait $PIDS
