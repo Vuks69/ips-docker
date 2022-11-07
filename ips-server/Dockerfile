@@ -8,5 +8,6 @@ RUN apk update && \
         iproute2-tc
 
 COPY server.sh /
+RUN chmod +x /server.sh
 
 ENTRYPOINT [ "/bin/sh", "-c", "/server.sh" ]

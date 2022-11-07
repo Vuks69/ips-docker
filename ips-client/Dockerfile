@@ -7,5 +7,6 @@ RUN apk update && \
         iperf3
 
 COPY client.sh /
+RUN chmod +x /client.sh
 
 ENTRYPOINT [ "/bin/sh", "-c", "/client.sh" ]
