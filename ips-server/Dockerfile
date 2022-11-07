@@ -10,4 +10,3 @@ RUN apk update && \
 COPY server.sh /
 
 ENTRYPOINT [ "/bin/sh", "-c", "/server.sh" ]
-CMD [ "50001", "50002" ]

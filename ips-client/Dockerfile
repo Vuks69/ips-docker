@@ -9,4 +9,3 @@ RUN apk update && \
 COPY client.sh /
 
 ENTRYPOINT [ "/bin/sh", "-c", "/client.sh" ]
-CMD [ "50001" ]

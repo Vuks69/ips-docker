@@ -18,7 +18,8 @@ services:
     expose:
       - "50001"
       - "50002"
-    command: [ "50001", "50002" ]
+    environment:
+      PORTS: "50001 50002"
 
   client-tcp:
     build: ./ips-client
@@ -30,7 +31,9 @@ services:
     hostname: ips-client-tcp
     networks:
       - intnet
-    command: [ "50001" ]
+    environment:
+      PORT: "50001"
+      UDP: ""
 
   client-udp:
     build: ./ips-client
@@ -42,4 +45,6 @@ services:
     hostname: ips-client-udp
     networks:
       - intnet
-    command: [ "50002", "--udp" ]
+    environment:
+      PORT: "50002"
+      UDP: "--udp"
