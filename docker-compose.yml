@@ -11,7 +11,7 @@ services:
     cap_add:
       - NET_ADMIN
     volumes:
-      - ./results/server:/results:rw
+      - ./results/server:/results/server:rw
     hostname: ips-server
     networks:
       - intnet
@@ -27,7 +27,7 @@ services:
     depends_on:
       - server
     volumes:
-      - ./results/client:/results:rw
+      - ./results/client:/results/client:rw
     hostname: ips-client-tcp
     networks:
       - intnet
@@ -41,7 +41,7 @@ services:
     depends_on:
       - server
     volumes:
-      - ./results/client:/results:rw
+      - ./results/client:/results/client:rw
     hostname: ips-client-udp
     networks:
       - intnet
