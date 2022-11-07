@@ -39,4 +39,4 @@ for PORT in ${PORTS}; do
         --logfile "/results/server/iperf3-${PORT}.log"
 done
 
-wait 90
+wait
