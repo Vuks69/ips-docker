@@ -19,5 +19,5 @@ tc filter add dev eth0 parent 1:0 protocol ip prio 1 u32 match ip protocol 17 0x
 
 for PORT in ${PORTS}; do
     touch "/results/server/iperf3-${PORT}.log"
-    iperf3 --server --PORT "${PORT}" --daemon --json --logfile "/results/server/iperf3-${PORT}.log"
+    iperf3 --server --port "${PORT}" --daemon --json --logfile "/results/server/iperf3-${PORT}.log"
 done
