@@ -34,7 +34,6 @@ for PORT in ${PORTS}; do
     iperf3 --server \
         --one-off \
         --port "${PORT}" \
-        --json \
         --logfile "/results/server/iperf3-${PORT}.log" &
     PIDS="$PIDS $!"
 done
