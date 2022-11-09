@@ -14,9 +14,9 @@ tc class add \
         ceil 1mbps
 
 # add subclasses
-tc class add dev eth0 parent 1:1 classid 1:10 htb rate 1mbps ceil 6mbps # for tcp
-tc class add dev eth0 parent 1:1 classid 1:20 htb rate 2mbps ceil 3mbps # for udp
-tc class add dev eth0 parent 1:1 classid 1:30 htb rate 100kbps ceil 1mbps # for anything else (look first command, 'default 30')
+tc class add dev eth0 parent 1:1 classid 1:10 htb rate 1mbit ceil 6mbit # for tcp
+tc class add dev eth0 parent 1:1 classid 1:20 htb rate 2mbit ceil 3mbit # for udp
+tc class add dev eth0 parent 1:1 classid 1:30 htb rate 100kbit ceil 1mbit # for anything else (look first command, 'default 30')
 
 # add filters that put packets in subclasses
 # cat /etc/protocols -> tcp = 6; udp = 17
