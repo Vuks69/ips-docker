@@ -30,11 +30,12 @@ tc filter add \
 tc filter add dev eth0 parent 1:0 protocol ip prio 1 u32 match ip protocol 17 0xff flowid 1:20
 
 for PORT in ${PORTS}; do
-    touch "/results/server/iperf3-${PORT}.log"
+    echo "" > "/results/server/iperf3-${PORT}.json"
     iperf3 --server \
         --one-off \
         --port "${PORT}" \
-        --logfile "/results/server/iperf3-${PORT}.log" &
+        --json \
+        --logfile "/results/server/iperf3-${PORT}.json" &
     PIDS="$PIDS $!"
 done
 

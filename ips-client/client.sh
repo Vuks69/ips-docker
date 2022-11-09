@@ -1,12 +1,13 @@
 #!/bin/sh
 set -xe
 
-touch "/results/client/iperf3-${PORT}.log"
+echo "" > "/results/client/iperf3-${PORT}.json"
 
 iperf3 --client ips-server \
     --port "$PORT" \
     --reverse \
     --parallel 5 \
-    --time 600 \
+    --time 60 \
+    --json \
     "$UDP" \
-    --logfile "/results/client/iperf3-${PORT}.log"
+    --logfile "/results/client/iperf3-${PORT}.json"
