@@ -1,5 +1,5 @@
 #!bin/sh
-set -xe -o ignoreeof
+set -xe
 
 # add qdisc
 tc qdisc add dev eth0 root handle 1: htb default 30
