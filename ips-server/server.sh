@@ -2,7 +2,7 @@
 set -xe
 
 # add qdisc
-tc qdisc add dev eth0 root handle 1: htb default 30
+tc qdisc add dev eth0 root handle 1: htb default 100
 
 # add root class
 tc class add \
@@ -10,24 +10,29 @@ tc class add \
     parent 1: \
     classid 1:1 \
     htb \
-        rate 10mbps \
-        ceil 1mbps
+        rate 100mbit \
+        ceil 100mbit
 
 # add subclasses
-tc class add dev eth0 parent 1:1 classid 1:10 htb rate 1mbit ceil 6mbit # for tcp
-tc class add dev eth0 parent 1:1 classid 1:20 htb rate 2mbit ceil 3mbit # for udp
-tc class add dev eth0 parent 1:1 classid 1:30 htb rate 100kbit ceil 1mbit # for anything else (look first command, 'default 30')
+tc class add dev eth0 parent 1:1 classid 1:10 htb rate 20mbit ceil 90mbit prio 3
+tc class add dev eth0 parent 1:1 classid 1:100 htb rate 5mbit ceil 10mbit prio 7 # for anything else (look first command, 'default 100')
+
+tc class add dev eth0 parent 1:1 classid 1:200 htb rate 70mbit ceil 100mbit
+tc class add dev eth0 parent 1:200 classid 1:210 htb rate 5mbit ceil 30mbit prio 1
+tc class add dev eth0 parent 1:200 classid 1:220 htb rate 40mbit ceil 100mbit prio 2
 
 # add filters that put packets in subclasses
-# cat /etc/protocols -> tcp = 6; udp = 17
+# filtering is done by source port of server (aka iperf3 server's port)
 tc filter add \
-    dev eth0 parent 1:0 \
-        protocol ip prio 1 \
-            u32 match ip \
-                protocol 6 0xff \
-                    flowid 1:10
+    dev eth0 \
+    parent 1:0 \
+    u32 match ip \
+        sport 50010 0xffff \
+            flowid 1:10
 
-tc filter add dev eth0 parent 1:0 protocol ip prio 1 u32 match ip protocol 17 0xff flowid 1:20
+tc filter add dev eth0 parent 1:0 u32 match ip sport 50210 0xffff flowid 1:210
+tc filter add dev eth0 parent 1:0 u32 match ip sport 50220 0xffff flowid 1:220
+
 
 for PORT in ${PORTS}; do
     echo "" > "/results/server/iperf3-${PORT}.json"

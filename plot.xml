@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"  standalone="no"?>
 <svg 
- width="1000" height="800"
- viewBox="0 0 1000 800"
+ width="900" height="900"
+ viewBox="0 0 900 900"
  xmlns="http://www.w3.org/2000/svg"
  xmlns:xlink="http://www.w3.org/1999/xlink"
 >
@@ -11,24 +11,24 @@
 
 <g id="gnuplot_canvas">
 
-<rect x="0" y="0" width="1000" height="800" fill="none"/>
+<rect x="0" y="0" width="900" height="900" fill="none"/>
 <defs>
 
 	<circle id='gpDot' r='0.5' stroke-width='0.5' stroke='currentColor'/>
-	<path id='gpPt0' stroke-width='0.296' stroke='currentColor' d='M-1,0 h2 M0,-1 v2'/>
-	<path id='gpPt1' stroke-width='0.296' stroke='currentColor' d='M-1,-1 L1,1 M1,-1 L-1,1'/>
-	<path id='gpPt2' stroke-width='0.296' stroke='currentColor' d='M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1'/>
-	<rect id='gpPt3' stroke-width='0.296' stroke='currentColor' x='-1' y='-1' width='2' height='2'/>
-	<rect id='gpPt4' stroke-width='0.296' stroke='currentColor' fill='currentColor' x='-1' y='-1' width='2' height='2'/>
-	<circle id='gpPt5' stroke-width='0.296' stroke='currentColor' cx='0' cy='0' r='1'/>
+	<path id='gpPt0' stroke-width='0.148' stroke='currentColor' d='M-1,0 h2 M0,-1 v2'/>
+	<path id='gpPt1' stroke-width='0.148' stroke='currentColor' d='M-1,-1 L1,1 M1,-1 L-1,1'/>
+	<path id='gpPt2' stroke-width='0.148' stroke='currentColor' d='M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1'/>
+	<rect id='gpPt3' stroke-width='0.148' stroke='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<rect id='gpPt4' stroke-width='0.148' stroke='currentColor' fill='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<circle id='gpPt5' stroke-width='0.148' stroke='currentColor' cx='0' cy='0' r='1'/>
 	<use xlink:href='#gpPt5' id='gpPt6' fill='currentColor' stroke='none'/>
-	<path id='gpPt7' stroke-width='0.296' stroke='currentColor' d='M0,-1.33 L-1.33,0.67 L1.33,0.67 z'/>
+	<path id='gpPt7' stroke-width='0.148' stroke='currentColor' d='M0,-1.33 L-1.33,0.67 L1.33,0.67 z'/>
 	<use xlink:href='#gpPt7' id='gpPt8' fill='currentColor' stroke='none'/>
 	<use xlink:href='#gpPt7' id='gpPt9' stroke='currentColor' transform='rotate(180)'/>
 	<use xlink:href='#gpPt9' id='gpPt10' fill='currentColor' stroke='none'/>
 	<use xlink:href='#gpPt3' id='gpPt11' stroke='currentColor' transform='rotate(45)'/>
 	<use xlink:href='#gpPt11' id='gpPt12' fill='currentColor' stroke='none'/>
-	<path id='gpPt13' stroke-width='0.296' stroke='currentColor' d='M0,1.330 L1.265,0.411 L0.782,-1.067 L-0.782,-1.076 L-1.265,0.411 z'/>
+	<path id='gpPt13' stroke-width='0.148' stroke='currentColor' d='M0,1.330 L1.265,0.411 L0.782,-1.067 L-0.782,-1.076 L-1.265,0.411 z'/>
 	<use xlink:href='#gpPt13' id='gpPt14' fill='currentColor' stroke='none'/>
 	<filter id='textbox' filterUnits='objectBoundingBox' x='0' y='0' height='1' width='1'>
 	  <feFlood flood-color='white' flood-opacity='1' result='bgnd'/>
@@ -42,128 +42,155 @@
 <g fill="none" color="white" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='black'  d='M53.55,773.00 L60.30,773.00 M981.09,773.00 L974.34,773.00  '/>	<g transform="translate(47.25,775.93)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="9.00"  text-anchor="end">
+	<path stroke='black'  d='M119.70,846.00 L133.20,846.00 M862.19,846.00 L848.69,846.00  '/>	<g transform="translate(107.10,851.85)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="end">
 		<text><tspan font-family="Helvetica Neue" >0 bit</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='black'  d='M53.55,668.36 L60.30,668.36 M981.09,668.36 L974.34,668.36  '/>	<g transform="translate(47.25,671.29)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="9.00"  text-anchor="end">
-		<text><tspan font-family="Helvetica Neue" >1 Mbit</tspan></text>
+	<path stroke='black'  d='M119.70,718.50 L133.20,718.50 M862.19,718.50 L848.69,718.50  '/>	<g transform="translate(107.10,724.35)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family="Helvetica Neue" >10 Mbit</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='black'  d='M53.55,563.72 L60.30,563.72 M981.09,563.72 L974.34,563.72  '/>	<g transform="translate(47.25,566.65)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="9.00"  text-anchor="end">
-		<text><tspan font-family="Helvetica Neue" >2 Mbit</tspan></text>
+	<path stroke='black'  d='M119.70,591.00 L133.20,591.00 M862.19,591.00 L848.69,591.00  '/>	<g transform="translate(107.10,596.85)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family="Helvetica Neue" >20 Mbit</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='black'  d='M53.55,459.08 L60.30,459.08 M981.09,459.08 L974.34,459.08  '/>	<g transform="translate(47.25,462.01)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="9.00"  text-anchor="end">
-		<text><tspan font-family="Helvetica Neue" >3 Mbit</tspan></text>
+	<path stroke='black'  d='M119.70,463.50 L133.20,463.50 M862.19,463.50 L848.69,463.50  '/>	<g transform="translate(107.10,469.35)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family="Helvetica Neue" >30 Mbit</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='black'  d='M53.55,354.43 L60.30,354.43 M981.09,354.43 L974.34,354.43  '/>	<g transform="translate(47.25,357.36)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="9.00"  text-anchor="end">
-		<text><tspan font-family="Helvetica Neue" >4 Mbit</tspan></text>
+	<path stroke='black'  d='M119.70,336.01 L133.20,336.01 M862.19,336.01 L848.69,336.01  '/>	<g transform="translate(107.10,341.86)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family="Helvetica Neue" >40 Mbit</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='black'  d='M53.55,249.79 L60.30,249.79 M981.09,249.79 L974.34,249.79  '/>	<g transform="translate(47.25,252.72)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="9.00"  text-anchor="end">
-		<text><tspan font-family="Helvetica Neue" >5 Mbit</tspan></text>
+	<path stroke='black'  d='M119.70,208.51 L133.20,208.51 M862.19,208.51 L848.69,208.51  '/>	<g transform="translate(107.10,214.36)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family="Helvetica Neue" >50 Mbit</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='black'  d='M53.55,145.15 L60.30,145.15 M981.09,145.15 L974.34,145.15  '/>	<g transform="translate(47.25,148.08)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="9.00"  text-anchor="end">
-		<text><tspan font-family="Helvetica Neue" >6 Mbit</tspan></text>
+	<path stroke='black'  d='M119.70,81.01 L133.20,81.01 M862.19,81.01 L848.69,81.01  '/>	<g transform="translate(107.10,86.86)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family="Helvetica Neue" >60 Mbit</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='black'  d='M53.55,40.51 L60.30,40.51 M981.09,40.51 L974.34,40.51  '/>	<g transform="translate(47.25,43.44)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="9.00"  text-anchor="end">
-		<text><tspan font-family="Helvetica Neue" >7 Mbit</tspan></text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='black'  d='M53.55,773.00 L53.55,766.25 M53.55,40.51 L53.55,47.26  '/>	<g transform="translate(53.55,789.43)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="9.00"  text-anchor="middle">
+	<path stroke='black'  d='M119.70,846.00 L119.70,832.50 M119.70,81.01 L119.70,94.51  '/>	<g transform="translate(119.70,878.85)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="middle">
 		<text><tspan font-family="Helvetica Neue" > 0</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='black'  d='M208.14,773.00 L208.14,766.25 M208.14,40.51 L208.14,47.26  '/>	<g transform="translate(208.14,789.43)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="9.00"  text-anchor="middle">
+	<path stroke='black'  d='M243.45,846.00 L243.45,832.50 M243.45,81.01 L243.45,94.51  '/>	<g transform="translate(243.45,878.85)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="middle">
 		<text><tspan font-family="Helvetica Neue" > 10</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='black'  d='M362.73,773.00 L362.73,766.25 M362.73,40.51 L362.73,47.26  '/>	<g transform="translate(362.73,789.43)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="9.00"  text-anchor="middle">
+	<path stroke='black'  d='M367.20,846.00 L367.20,832.50 M367.20,81.01 L367.20,94.51  '/>	<g transform="translate(367.20,878.85)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="middle">
 		<text><tspan font-family="Helvetica Neue" > 20</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='black'  d='M517.32,773.00 L517.32,766.25 M517.32,40.51 L517.32,47.26  '/>	<g transform="translate(517.32,789.43)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="9.00"  text-anchor="middle">
+	<path stroke='black'  d='M490.95,846.00 L490.95,832.50 M490.95,81.01 L490.95,94.51  '/>	<g transform="translate(490.95,878.85)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="middle">
 		<text><tspan font-family="Helvetica Neue" > 30</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='black'  d='M671.91,773.00 L671.91,766.25 M671.91,40.51 L671.91,47.26  '/>	<g transform="translate(671.91,789.43)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="9.00"  text-anchor="middle">
+	<path stroke='black'  d='M614.69,846.00 L614.69,832.50 M614.69,81.01 L614.69,94.51  '/>	<g transform="translate(614.69,878.85)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="middle">
 		<text><tspan font-family="Helvetica Neue" > 40</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='black'  d='M826.50,773.00 L826.50,766.25 M826.50,40.51 L826.50,47.26  '/>	<g transform="translate(826.50,789.43)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="9.00"  text-anchor="middle">
+	<path stroke='black'  d='M738.44,846.00 L738.44,832.50 M738.44,81.01 L738.44,94.51  '/>	<g transform="translate(738.44,878.85)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="middle">
 		<text><tspan font-family="Helvetica Neue" > 50</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='black'  d='M981.09,773.00 L981.09,766.25 M981.09,40.51 L981.09,47.26  '/>	<g transform="translate(981.09,789.43)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="9.00"  text-anchor="middle">
+	<path stroke='black'  d='M862.19,846.00 L862.19,832.50 M862.19,81.01 L862.19,94.51  '/>	<g transform="translate(862.19,878.85)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="middle">
 		<text><tspan font-family="Helvetica Neue" > 60</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='black'  d='M53.55,40.51 L53.55,773.00 L981.09,773.00 L981.09,40.51 L53.55,40.51 Z  '/></g>
+	<path stroke='black'  d='M119.70,81.01 L119.70,846.00 L862.19,846.00 L862.19,81.01 L119.70,81.01 Z  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
 </g>
-	<g id="gnuplot_plot_1" ><title>'data/iperf3-50001'</title>
+	<g id="gnuplot_plot_1" ><title>1:10::rate=20mbit,ceil=90mbit,prio=3</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<g transform="translate(179.55,56.94)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="9.00"  text-anchor="end">
-		<text>'data/iperf3-50001'</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='rgb(148,   0, 211)'  d='M185.85,54.01 L217.80,54.01 M53.55,152.42 L69.01,197.24 L84.47,142.67 L99.93,227.54 L115.39,172.97 L130.85,172.96
-		L146.31,172.99 L161.76,172.98 L177.22,172.97 L192.68,227.54 L208.14,172.96 L223.60,172.98 L239.06,172.97 L254.52,172.99
-		L269.98,172.97 L285.44,227.56 L300.90,172.96 L316.35,172.99 L331.81,172.95 L347.27,172.99 L362.73,172.98 L378.19,172.96
-		L393.65,227.54 L409.11,172.99 L424.57,172.96 L440.03,172.98 L455.49,172.98 L470.94,172.98 L486.40,227.52 L501.86,172.99
-		L517.32,173.00 L532.78,172.96 L548.24,172.98 L563.70,172.97 L579.16,172.97 L594.62,227.55 L610.08,172.98 L625.54,172.95
-		L640.99,173.00 L656.45,172.98 L671.91,198.47 L687.37,202.02 L702.83,172.99 L718.29,172.97 L733.75,172.97 L749.21,172.96
-		L764.67,172.98 L780.12,227.54 L795.58,172.98 L811.04,172.97 L826.50,172.96 L841.96,172.99 L857.42,198.43 L872.88,147.51
-		L888.34,227.56 L903.80,172.96 L919.26,173.01 L934.72,172.92 L950.17,172.99 L965.63,173.00  '/></g>
-	</g>
-	<g id="gnuplot_plot_2" ><title>'data/iperf3-50002'</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<g transform="translate(179.55,70.44)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="9.00"  text-anchor="end">
-		<text>'data/iperf3-50002'</text>
+	<g transform="translate(611.10,113.86)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family="Helvetica Neue" >1:10::rate=20mbit,ceil=90mbit,prio=3</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='rgb(  0, 158, 115)'  d='M185.85,67.51 L217.80,67.51 M53.55,437.26 L69.01,559.66 L84.47,562.09 L99.93,559.66 L115.39,560.87 L130.85,559.66
-		L146.31,560.87 L161.76,560.88 L177.22,559.65 L192.68,559.66 L208.14,560.87 L223.60,562.08 L239.06,560.87 L254.52,560.87
-		L269.98,557.23 L285.44,560.87 L300.90,560.87 L316.35,560.87 L331.81,562.08 L347.27,558.45 L362.73,558.44 L378.19,562.08
-		L393.65,560.87 L409.11,560.87 L424.57,560.87 L440.03,558.44 L455.49,560.87 L470.94,559.66 L486.40,560.87 L501.86,560.87
-		L517.32,562.08 L532.78,560.87 L548.24,560.87 L563.70,559.66 L579.16,559.65 L594.62,562.09 L610.08,558.45 L625.53,560.87
-		L640.99,559.66 L656.45,562.09 L671.91,559.65 L687.37,559.66 L702.83,560.87 L718.29,560.87 L733.75,562.09 L749.21,558.44
-		L764.67,560.87 L780.12,558.45 L795.58,560.85 L811.04,562.10 L826.50,562.08 L841.96,559.66 L857.42,558.45 L872.88,562.08
-		L888.34,560.87 L903.80,559.66 L919.26,558.45 L934.71,560.87 L950.17,560.87 L965.63,558.45  '/></g>
+	<path stroke='rgb(148,   0, 211)'  d='M623.70,108.01 L687.60,108.01 M119.70,398.37 L132.08,598.17 L144.45,598.16 L156.83,598.17 L169.20,598.32 L181.58,598.18
+		L193.95,598.16 L206.32,598.61 L218.70,598.17 L231.07,598.17 L243.45,598.19 L255.82,598.30 L268.20,598.33 L280.57,598.15
+		L292.95,598.17 L305.32,598.76 L317.70,598.18 L330.07,598.18 L342.45,598.30 L354.82,598.18 L367.20,598.18 L379.57,598.15
+		L391.95,598.46 L404.32,598.18 L416.70,598.14 L429.07,598.19 L441.45,598.32 L453.82,598.45 L466.20,599.39 L478.57,599.39
+		L490.95,598.26 L503.32,598.17 L515.70,598.34 L528.07,598.30 L540.45,598.17 L552.82,598.17 L565.19,598.17 L577.57,598.17
+		L589.94,599.20 L602.32,598.17 L614.69,598.16 L627.07,600.25 L639.44,600.09 L651.82,598.17 L664.19,598.61 L676.57,598.17
+		L688.94,598.17 L701.32,598.17 L713.69,599.20 L726.07,598.17 L738.44,598.17 L750.82,598.17 L763.19,598.16 L775.57,598.19
+		L787.94,599.49 L800.32,598.17 L812.69,598.18 L825.07,598.16 L837.44,598.19 L849.82,598.29 L862.19,273.54  '/></g>
 	</g>
-<g fill="none" color="white" stroke="rgb(  0, 158, 115)" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round">
+	<g id="gnuplot_plot_2" ><title>1:100::rate=5mbit,ceil=10mbit,prio=7</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
+	<g transform="translate(611.10,140.86)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family="Helvetica Neue" >1:100::rate=5mbit,ceil=10mbit,prio=7</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='rgb(  0, 158, 115)'  d='M623.70,135.01 L687.60,135.01 M119.70,776.88 L132.08,784.12 L144.45,783.97 L156.83,784.12 L169.20,783.97 L181.58,784.12
+		L193.95,783.97 L206.32,784.12 L218.70,783.97 L231.07,784.11 L243.45,784.12 L255.82,783.97 L268.20,784.12 L280.57,783.96
+		L292.95,784.12 L305.32,783.97 L317.70,784.12 L330.07,783.97 L342.45,784.12 L354.82,783.97 L367.20,784.12 L379.57,783.96
+		L391.95,784.12 L404.32,784.12 L416.70,783.97 L429.07,784.12 L441.45,783.97 L453.82,784.11 L466.20,784.12 L478.57,783.97
+		L490.95,784.12 L503.32,783.97 L515.70,784.12 L528.07,783.97 L540.45,784.12 L552.82,783.97 L565.20,784.11 L577.57,784.12
+		L589.94,784.12 L602.32,783.97 L614.70,784.11 L627.07,784.26 L639.44,784.26 L651.82,784.12 L664.19,783.98 L676.57,784.11
+		L688.94,784.12 L701.32,783.97 L713.69,784.12 L726.07,784.11 L738.44,783.97 L750.82,784.12 L763.19,783.97 L775.57,784.27
+		L787.94,783.96 L800.32,784.12 L812.69,783.97 L825.07,784.12 L837.44,784.12 L849.82,781.60  '/></g>
+	</g>
+	<g id="gnuplot_plot_3" ><title>2:210::rate=5mbit,ceil=30mbit,prio=1</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
+	<g transform="translate(611.10,167.86)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family="Helvetica Neue" >2:210::rate=5mbit,ceil=30mbit,prio=1</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='rgb( 86, 180, 233)'  d='M623.70,162.01 L687.60,162.01 M119.70,467.78 L132.08,474.26 L144.45,474.25 L156.83,474.27 L169.20,474.58 L181.58,474.67
+		L193.95,474.25 L206.33,475.45 L218.70,474.39 L231.07,474.22 L243.45,474.30 L255.82,474.69 L268.20,474.23 L280.57,474.41
+		L292.95,474.23 L305.32,475.47 L317.70,474.25 L330.07,474.55 L342.45,474.40 L354.82,474.24 L367.20,474.29 L379.57,474.21
+		L391.95,475.31 L404.32,474.52 L416.70,474.58 L429.07,474.26 L441.45,474.26 L453.82,474.98 L466.20,479.27 L478.57,474.23
+		L490.95,474.44 L503.32,474.25 L515.70,474.87 L528.07,474.38 L540.45,474.41 L552.82,474.40 L565.20,474.54 L577.57,474.54
+		L589.94,476.02 L602.32,474.42 L614.69,475.88 L627.07,476.33 L639.44,477.32 L651.82,474.58 L664.19,475.45 L676.57,474.39
+		L688.94,474.40 L701.32,474.22 L713.69,476.21 L726.07,474.41 L738.44,474.39 L750.82,474.39 L763.19,474.42 L775.57,476.46
+		L787.94,474.23 L800.32,474.41 L812.69,474.58 L825.07,474.23 L837.44,474.25 L849.82,475.04  '/></g>
+	</g>
+	<g id="gnuplot_plot_4" ><title>2:220::rate=40mbit,ceil=100mbit,prio=2</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
+	<g transform="translate(611.10,194.86)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family="Helvetica Neue" >2:220::rate=40mbit,ceil=100mbit,prio=2</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='rgb(230, 159,   0)'  d='M623.70,189.01 L687.60,189.01 M119.70,202.85 L132.08,288.45 L144.45,288.58 L156.83,288.47 L169.20,289.05 L181.58,288.54
+		L193.95,288.52 L206.32,290.08 L218.70,288.32 L231.07,288.45 L243.45,288.43 L255.82,289.08 L268.20,288.58 L280.57,288.49
+		L292.95,288.72 L305.32,290.23 L317.70,288.44 L330.07,288.61 L342.45,288.15 L354.82,288.77 L367.20,288.45 L379.57,288.46
+		L391.95,289.63 L404.32,288.74 L416.70,288.73 L429.07,288.50 L441.45,288.58 L453.82,289.46 L466.20,296.15 L478.57,289.20
+		L490.95,288.44 L503.32,288.35 L515.70,289.58 L528.07,288.34 L540.45,288.75 L552.82,288.45 L565.19,289.04 L577.57,288.44
+		L589.94,291.28 L602.32,288.31 L614.69,288.44 L627.07,294.38 L639.44,293.56 L651.82,288.67 L664.19,290.52 L676.57,288.57
+		L688.94,288.55 L701.32,288.69 L713.69,291.26 L726.07,288.48 L738.44,288.72 L750.82,288.43 L763.19,288.63 L775.57,292.01
+		L787.94,288.32 L800.32,288.49 L812.69,288.64 L825.07,288.51 L837.44,288.60 L849.82,240.29 L858.81,81.01  '/></g>
+	</g>
+<g fill="none" color="white" stroke="rgb(230, 159,   0)" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round">
 </g>
 <g fill="none" color="black" stroke="black" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<path stroke='black'  d='M53.55,40.51 L53.55,773.00 L981.09,773.00 L981.09,40.51 L53.55,40.51 Z  '/></g>
+	<path stroke='black'  d='M119.70,81.01 L119.70,846.00 L862.19,846.00 L862.19,81.01 L119.70,81.01 Z  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round">
-	<g transform="translate(517.32,23.19)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="9.00"  text-anchor="middle">
+	<g transform="translate(490.94,46.36)" stroke="none" fill="black" font-family="Helvetica Neue" font-size="18.00"  text-anchor="middle">
 		<text><tspan font-family="Helvetica Neue" >Comparison of speeds</tspan></text>
 	</g>
 </g>

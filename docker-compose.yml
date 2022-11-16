@@ -15,13 +15,10 @@ services:
     hostname: ips-server
     networks:
       - intnet
-    expose:
-      - "50001"
-      - "50002"
     environment:
-      PORTS: "50001 50002"
+      PORTS: "50010 50210 50220 50100"
 
-  client-tcp:
+  client-1:
     build: ./ips-client
     image: ips-client:latest
     depends_on:
@@ -32,10 +29,9 @@ services:
     networks:
       - intnet
     environment:
-      PORT: "50001"
-      UDP: ""
+      PORT: "50010"
 
-  client-udp:
+  client-2:
     build: ./ips-client
     image: ips-client:latest
     depends_on:
@@ -46,5 +42,30 @@ services:
     networks:
       - intnet
     environment:
-      PORT: "50002"
-      UDP: "--udp"
+      PORT: "50210"
+
+  client-3:
+    build: ./ips-client
+    image: ips-client:latest
+    depends_on:
+      - server
+    volumes:
+      - ./results/client:/results/client:rw
+    hostname: ips-client-udp
+    networks:
+      - intnet
+    environment:
+      PORT: "50220"
+
+  client-4:
+    build: ./ips-client
+    image: ips-client:latest
+    depends_on:
+      - server
+    volumes:
+      - ./results/client:/results/client:rw
+    hostname: ips-client-udp
+    networks:
+      - intnet
+    environment:
+      PORT: "50100"
