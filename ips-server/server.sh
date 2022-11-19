@@ -34,11 +34,11 @@ tc filter add dev eth0 parent 1:0 u32 match ip sport 50210 0xffff flowid 1:210
 tc filter add dev eth0 parent 1:0 u32 match ip sport 50220 0xffff flowid 1:220
 
 
-for PORT in ${PORTS}; do
+for PORT in $PORTS ; do
     echo "" > "/results/server/iperf3-${PORT}.json"
     iperf3 --server \
         --one-off \
-        --port "${PORT}" \
+        --port $PORT \
         --json \
         --logfile "/results/server/iperf3-${PORT}.json" &
     PIDS="$PIDS $!"

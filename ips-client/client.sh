@@ -3,10 +3,12 @@ set -xe
 
 echo "" > "/results/client/iperf3-${PORT}.json"
 
+sleep ${INITIAL_WAIT:-0}
+
 iperf3 --client ips-server \
-    --port "$PORT" \
+    --port $PORT \
     --reverse \
-    --time 60 \
+    --time ${TIME:-60} \
     --json \
     --udp \
     --bitrate 100M \
