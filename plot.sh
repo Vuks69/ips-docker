@@ -25,5 +25,5 @@ for j in $@; do
 	paste <(printf "%s\n" "${times[@]}") <(printf "%s\n" "${values[@]}") >data/${filename}
 done
 
-gnuplot plot.plt >plot.xml
+gnuplot plot.plt
 #firefox plot.xml
