@@ -30,6 +30,8 @@ services:
       - intnet
     environment:
       PORT: "50010"
+      INITIAL_WAIT: "0"
+      TIME: "70"
 
   client-210:
     build: ./ips-client
@@ -43,6 +45,8 @@ services:
       - intnet
     environment:
       PORT: "50210"
+      INITIAL_WAIT: "30"
+      TIME: "70"
 
   client-220:
     build: ./ips-client
@@ -56,6 +60,8 @@ services:
       - intnet
     environment:
       PORT: "50220"
+      INITIAL_WAIT: "10"
+      TIME: "70"
 
   client-100:
     build: ./ips-client
@@ -69,3 +75,5 @@ services:
       - intnet
     environment:
       PORT: "50100"
+      INITIAL_WAIT: "50"
+      TIME: "30"

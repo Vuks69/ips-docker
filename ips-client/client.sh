@@ -1,9 +1,9 @@
 #!/bin/sh
 set -xe
 
-echo "" > "/results/client/iperf3-${PORT}.json"
-
 sleep ${INITIAL_WAIT:-0}
+
+echo "" > "/results/client/${PORT}.json"
 
 iperf3 --client ips-server \
     --port $PORT \
@@ -12,4 +12,4 @@ iperf3 --client ips-server \
     --json \
     --udp \
     --bitrate 100M \
-    --logfile "/results/client/iperf3-${PORT}.json"
+    --logfile "/results/client/${PORT}.json"
