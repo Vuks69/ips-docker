@@ -8,7 +8,7 @@ set key top right
 set yrange [0:*]
 set xrange [0:100]
 
-set title "Wykres prędkości połączeń w czasie\n(class/rate/ceil/priority)"
+set title "Wykres prędkości połączeń w czasie\n(parent:class/rate/ceil/priority)\n1:200/70mbit/100mbit/n-a"
 set xlabel 'Czas [s]'
 set ylabel 'Prędkość połączenia'
 # Convert bits to megabits
@@ -19,6 +19,6 @@ set xtics autofreq 10
 
 
 FILES = system("find data/ -mindepth 1 | sort")
-TITLES = "1:10/20mbit/90mbit/3 1:100/5mbit/10mbit/7 2:210/5mbit/30mbit/1 2:220/40mbit/100mbit/2"
+TITLES = "1:10/20mbit/90mbit/3 1:100/5mbit/10mbit/7 200:210/5mbit/30mbit/1 200:220/40mbit/100mbit/2"
 
 plot for [i=1:words(FILES)] word(FILES,i) title word(TITLES,i)
