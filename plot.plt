@@ -5,7 +5,7 @@ set style data lines
 set boxwidth 0.9
 set key top right
 
-set yrange [0:*]
+set yrange [0:100e6]
 set xrange [0:100]
 
 set title "Wykres prędkości połączeń w czasie\n(parent:class/rate/ceil/priority)\n1:200/70mbit/100mbit/n-a"
@@ -16,6 +16,7 @@ set format y '%.0s %cbit'
 
 set grid xtics ytics
 set xtics autofreq 10
+set ytics autofreq 10e6
 
 
 FILES = system("find data/ -type f")
